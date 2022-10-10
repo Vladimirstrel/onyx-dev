@@ -1,0 +1,37 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 165px;
+  height: 48px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: linear-gradient(142.45deg, #00ab39 23.58%, #008b00 86.63%);
+  border: none;
+  color: var(--white);
+  font-size: 12px;
+
+  @media (max-width: $xs) {
+    min-width: 120px;
+    height: 40px;
+  }
+
+  &:hover {
+    background: var(--primary-color);
+  }
+}
+
+.btn-default {
+  background: bottom;
+  cursor: pointer;
+  overflow: hidden;
+  color: var(--green);
+  border: 1px solid;
+
+  &:hover {
+    background: var(--primary-color);
+    border: none;
+    color: var(--white);
+    transition: 1s;
+  }
+}

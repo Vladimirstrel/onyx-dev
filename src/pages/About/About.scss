@@ -1,0 +1,145 @@
+@import '../../styles/variables.scss';
+
+.map-section {
+  background-color: var(--black);
+
+  .right-left-block {
+    margin-bottom: 245px;
+
+    @media (max-width: $lg) {
+      margin-bottom: 150px;
+    }
+    @media (max-width: $md) {
+      margin-bottom: 125px;
+    }
+    @media (max-width: $sm) {
+      margin-bottom: 0;
+    }
+  }
+  // .number-holder {
+  //   margin: 0;
+
+  //   .numbers {
+  //     width: 100%;
+
+  //     @media (max-width: $sm) {
+  //      margin-bottom: 50px;
+  //     }
+  //   }
+  //   .number {
+  //     font-size: 87px;
+  //     line-height: 105.29px;
+
+  //     @media (max-width: $md) {
+  //       font-size: 65px;
+  //       line-height: 1.2;
+  //     }
+  //   }
+  //   .text {
+  //     top: 100px;
+  //     max-width: 100%;
+
+  //     @media (max-width: $md) {
+  //       top: 75px;
+  //       font-size: 20px;
+  //     }
+  //   }
+  // }
+}
+
+.map-holder {
+  margin-bottom: 118px;
+  @media (max-width: $md) {
+    margin-bottom: 60px;
+  }
+  .text-block {
+    max-width: 770px;
+    margin-bottom: 80px;
+    @media (max-width: $md) {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      margin-bottom: 32px;
+
+      @media (max-width: $xs) {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 20px;
+      }
+    }
+
+    p {
+      @media (max-width: $xs) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+.map-block {
+  display: flex;
+  // position: relative;
+
+  // .map-info {
+  //   position: absolute;
+  //   top: -28px;
+  //   right: 160px;
+
+  //   // @media (max-width: $md) {
+  //   //   right: 150px;
+  //   // }
+
+  //   @media (max-width: $sm) {
+  //     right: 0px;
+  //     top: -50px;
+  //   }
+
+  //   p {
+  //     &:first-child {
+  //       &::before {
+  //         content: '';
+  //         width: 16px;
+  //         height: 16px;
+  //         display: inline-block;
+  //         vertical-align: middle;
+  //         border-radius: 50%;
+  //         background-color: var(--green);
+  //         margin-right: 16px;
+  //       }
+  //     }
+
+  //     &::before {
+  //       content: '';
+  //       width: 16px;
+  //       height: 16px;
+  //       display: inline-block;
+  //       vertical-align: middle;
+  //       border-radius: 50%;
+  //       background-color: var(--white);
+  //       margin-right: 16px;
+  //     }
+  //   }
+  // }
+
+  img {
+    width: 100%;
+    max-height: 600px;
+    // width: 800px;
+    // margin: 0 auto;
+    // @media (max-width: $md) {
+    //   width: 100%;
+    //   margin: 0;
+    // }
+  }
+}
+
+.about-section {
+  background: var(--dark-grey);
+
+  .btn-default {
+    display: block;
+    margin: 0 auto;
+  }
+}

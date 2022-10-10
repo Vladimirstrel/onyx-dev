@@ -1,0 +1,112 @@
+@import '../../styles/variables.scss';
+
+.loan-programs {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  background-color: var(--black);
+
+  &::after {
+    content: '';
+    background-image: url(../../assets/image/img-group.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 100%;
+  }
+
+  .block {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  .text-holder {
+    margin: 0 auto;
+    max-width: 808px;
+    text-align: center;
+
+    @media (max-width: $md) {
+      max-width: 500px;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+      text-transform: uppercase;
+
+      @media (max-width: $md) {
+        font-size: 30px;
+        margin-bottom: 20px;
+        line-height: 32px;
+      }
+
+      @media (max-width: $xs) {
+        font-size: 20px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 28px;
+      margin: 0 0 40px;
+
+      @media (max-width: $md) {
+        font-size: 16px;
+        margin: 0 0 30px;
+      }
+
+      @media (max-width: $xs) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.recently-funded {
+  &::after {
+    content: '';
+    background-image: url(../../assets/image/img-group.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 65%;
+    right: 0;
+    height: 400px;
+    width: 100%;
+    transform: rotate(180deg);
+  }
+}
+
+.loan-programs-page {
+  .btn-default {
+    display: inline-flex;
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: bold;
+    border: 1px solid var(--green);
+    margin-top: 48px;
+
+    @media (max-width: $sm) {
+      margin-top: 24px;
+    }
+  }
+  .right-left-block {
+    margin-bottom: 150px;
+    @media (max-width: $lg) {
+      margin-bottom: 80px;
+    }
+    @media (max-width: $sm) {
+      margin-bottom: 40px;
+    }
+    .col-left {
+      .objects-text {
+        margin: 0;
+        p {
+          &:nth-child(2n + 1) {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
